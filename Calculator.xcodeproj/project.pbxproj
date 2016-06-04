@@ -17,6 +17,7 @@
 		CAB6B58E1D00AC1E00586439 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB6B58D1D00AC1E00586439 /* CalculatorTests.swift */; };
 		CAB6B5991D00AC1E00586439 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB6B5981D00AC1E00586439 /* CalculatorUITests.swift */; };
 		CAE4B2711D032F6800F18B50 /* Displacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4B2701D032F6800F18B50 /* Displacement.swift */; };
+		CAE4B2731D033DD500F18B50 /* Velocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4B2721D033DD500F18B50 /* Velocity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CAB6B5981D00AC1E00586439 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		CAB6B59A1D00AC1E00586439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAE4B2701D032F6800F18B50 /* Displacement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Displacement.swift; sourceTree = "<group>"; };
+		CAE4B2721D033DD500F18B50 /* Velocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Velocity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				CAB6B5841D00AC1D00586439 /* Info.plist */,
 				CA9E284F1D031F2000FC6FA9 /* Kinematics.swift */,
 				CAE4B2701D032F6800F18B50 /* Displacement.swift */,
+				CAE4B2721D033DD500F18B50 /* Velocity.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			files = (
 				CAE4B2711D032F6800F18B50 /* Displacement.swift in Sources */,
 				CAB6B57B1D00AC1D00586439 /* ViewController.swift in Sources */,
+				CAE4B2731D033DD500F18B50 /* Velocity.swift in Sources */,
 				CA9E6A201D013B0800E3C687 /* OhmViewController.swift in Sources */,
 				CAB6B5791D00AC1D00586439 /* AppDelegate.swift in Sources */,
 				CA9E28501D031F2000FC6FA9 /* Kinematics.swift in Sources */,

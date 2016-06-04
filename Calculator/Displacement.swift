@@ -25,16 +25,21 @@ class Displacement: UIViewController {
     @IBOutlet weak var displacement_field: UITextField!
     
     @IBOutlet weak var clear_button: UIButton!
+    @IBOutlet weak var calculate_button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         displacement_header.text = "Displacement"
         displacement_header.font = UIFont (name: "Helvetica Neue", size: 30)
+        displacement_header.textAlignment = NSTextAlignment.Center;
         
         initial_velocity_field.keyboardType = .DecimalPad
         time_field.keyboardType = .DecimalPad
         acceleration_field.keyboardType = .DecimalPad
+        
+        clear_button.layer.cornerRadius = 5
+        calculate_button.layer.cornerRadius = 5
         
     }
     
