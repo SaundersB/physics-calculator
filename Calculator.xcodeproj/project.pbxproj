@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA9E6A201D013B0800E3C687 /* OhmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9E6A1F1D013B0800E3C687 /* OhmViewController.swift */; };
 		CAB6B5791D00AC1D00586439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB6B5781D00AC1D00586439 /* AppDelegate.swift */; };
 		CAB6B57B1D00AC1D00586439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB6B57A1D00AC1D00586439 /* ViewController.swift */; };
 		CAB6B57E1D00AC1D00586439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB6B57C1D00AC1D00586439 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA9E6A1F1D013B0800E3C687 /* OhmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OhmViewController.swift; sourceTree = "<group>"; };
 		CAB6B5751D00AC1D00586439 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB6B5781D00AC1D00586439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB6B57A1D00AC1D00586439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				CAB6B5781D00AC1D00586439 /* AppDelegate.swift */,
 				CAB6B57A1D00AC1D00586439 /* ViewController.swift */,
+				CA9E6A1F1D013B0800E3C687 /* OhmViewController.swift */,
 				CAB6B57C1D00AC1D00586439 /* Main.storyboard */,
 				CAB6B57F1D00AC1D00586439 /* Assets.xcassets */,
 				CAB6B5811D00AC1D00586439 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB6B57B1D00AC1D00586439 /* ViewController.swift in Sources */,
+				CA9E6A201D013B0800E3C687 /* OhmViewController.swift in Sources */,
 				CAB6B5791D00AC1D00586439 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +497,7 @@
 				CAB6B59F1D00AC1E00586439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAB6B5A01D00AC1E00586439 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +506,7 @@
 				CAB6B5A21D00AC1E00586439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAB6B5A31D00AC1E00586439 /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +515,7 @@
 				CAB6B5A51D00AC1E00586439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

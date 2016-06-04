@@ -1,15 +1,16 @@
 //
-//  ViewController.swift
+//  OhmViewController.swift
 //  Calculator
 //
 //  Created by Brandon_Saunders on 6/2/16.
 //  Copyright © 2016 Brandon Saunders. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-
+class OhmViewController: UIViewController {
+    
     @IBOutlet weak var calculator: UILabel!
     
     @IBOutlet weak var resistance_field: UITextField!
@@ -31,10 +32,10 @@ class ViewController: UIViewController {
         calculator.text = "Ohm's Law Calculator"
         calculator.textAlignment = NSTextAlignment.Center;
         
-        resistance_field.keyboardType = .DecimalPad
-        voltage_field.keyboardType = .DecimalPad
-        current_field.keyboardType = .DecimalPad
-
+        resistance_field.keyboardType = .NumberPad
+        voltage_field.keyboardType = .NumberPad
+        current_field.keyboardType = .NumberPad
+        
         resistance_label.text = "Resistance"
         voltage_label.text = "Voltage"
         current_label.text = "Current"
@@ -50,7 +51,7 @@ class ViewController: UIViewController {
         calculate_button.setTitle("Calculate", forState: UIControlState.Normal)
         clear_button.setTitle("Clear", forState: UIControlState.Normal)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -65,23 +66,15 @@ class ViewController: UIViewController {
         let resistance = Float(resistance_field.text!)
         let voltage = Float(voltage_field.text!)
         let current = Float(current_field.text!)
-        let alert = UIAlertController(title: "Alert", message: "Please input at least two values", preferredStyle: UIAlertControllerStyle.Alert)
         
-        if (current == 0 && voltage == 0 || current == 0 && resistance == 0 || resistance == 0 && voltage == 0){
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-            return
+        if (current != 0 && voltage != 0) {
+            resistance_field.text = String((voltage! / current!))
         }
-        else {
-            if (current != 0 && voltage != 0) {
-                resistance_field.text = String((voltage! / current!))
-            }
-            if (current != 0 && resistance != 0) {
-                voltage_field.text = String((current! * resistance!))
-            }
-            if (voltage != 0 && resistance != 0) {
-                current_field.text = String((voltage! / resistance!))
-            }
+        if (current != 0 && resistance != 0) {
+            voltage_field.text = String((current! * resistance!))
+        }
+        if (voltage != 0 && resistance != 0) {
+            current_field.text = String((voltage! / resistance!))
         }
         
     }
@@ -90,23 +83,6 @@ class ViewController: UIViewController {
         resistance_field.text = "0"
         voltage_field.text = "0"
         current_field.text = "0"
-    }
-    
-    
-    
-    class ViewController: UIViewController {
-        
-        @IBAction func showAlertButtonTapped(sender: UIButton) {
-            
-            // create the alert
-            let alert = UIAlertController(title: "WARNING", message: "Please input at least two values.", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            // add an action (button)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            // show the alert
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
     }
     
 }
