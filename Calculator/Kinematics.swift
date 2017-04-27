@@ -21,7 +21,7 @@ class Kinematics: UIViewController {
         displacement_button.layer.cornerRadius = 5
         velocity_button.layer.cornerRadius = 5
         kinematic_header.font = UIFont (name: "Helvetica Neue", size: 30)
-        kinematic_header.textAlignment = NSTextAlignment.Center;
+        kinematic_header.textAlignment = NSTextAlignment.center;
 
     }
     

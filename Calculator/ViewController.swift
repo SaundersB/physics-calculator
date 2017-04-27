@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         ohms_law_button.layer.cornerRadius = 5
         kinematics_calculator.layer.cornerRadius = 5
         
-        physics_calculators_header.textAlignment = NSTextAlignment.Center;
+        physics_calculators_header.textAlignment = NSTextAlignment.center;
 
         }
 

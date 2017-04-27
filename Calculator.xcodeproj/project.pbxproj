@@ -205,16 +205,18 @@
 				TargetAttributes = {
 					CAB6B5741D00AC1D00586439 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 4A9CJV2EBC;
+						LastSwiftMigration = 0830;
 					};
 					CAB6B5881D00AC1D00586439 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 4A9CJV2EBC;
+						LastSwiftMigration = 0830;
 						TestTargetID = CAB6B5741D00AC1D00586439;
 					};
 					CAB6B5931D00AC1E00586439 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 4A9CJV2EBC;
+						LastSwiftMigration = 0830;
 						TestTargetID = CAB6B5741D00AC1D00586439;
 					};
 				};
@@ -422,11 +424,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Speakeasys.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -436,11 +440,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Speakeasys.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -452,6 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Speakeasys.CalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
 			name = Debug;
@@ -464,6 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Speakeasys.CalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
 			name = Release;
@@ -475,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Speakeasys.CalculatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Calculator;
 			};
 			name = Debug;
@@ -486,6 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Speakeasys.CalculatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Calculator;
 			};
 			name = Release;
