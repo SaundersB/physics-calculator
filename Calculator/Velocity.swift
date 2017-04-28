@@ -26,9 +26,12 @@ class Velocity: UIViewController {
     @IBOutlet weak var clear_button: UIButton!
     @IBOutlet weak var calculate_button: UIButton!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       // velocity_header.textAlignment = NSTextAlignment.center;
+        //velocity_header.font = UIFont (name: "Helvetica Neue", size: 30)
+        
         initial_velocity_field.text = "0.0"
         time_field.text = "0.0"
         acceleration_field.text = "0.0"
