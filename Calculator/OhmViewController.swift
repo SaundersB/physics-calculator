@@ -11,6 +11,8 @@ import UIKit
 
 class OhmViewController: UIViewController {
     
+
+    @IBOutlet weak var navigation_bar: UINavigationItem!
     @IBOutlet weak var calculator: UILabel!
     
     @IBOutlet weak var resistance_field: UITextField!
@@ -27,9 +29,13 @@ class OhmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        calculator.text = "Ohm's Law Calculator"
-        calculator.textAlignment = NSTextAlignment.center;
-        calculator.font = UIFont (name: "Helvetica Neue", size: 30)
+        //calculator.text = "Ohm's Law Calculator"
+        //calculator.textAlignment = NSTextAlignment.center
+        //calculator.font = UIFont (name: "Helvetica Neue", size: 30)
+        
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        
         
         resistance_field.keyboardType = .decimalPad
         voltage_field.keyboardType = .decimalPad

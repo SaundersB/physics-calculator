@@ -30,9 +30,9 @@ class Displacement: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        displacement_header.text = "Displacement"
-        displacement_header.font = UIFont (name: "Helvetica Neue", size: 30)
-        displacement_header.textAlignment = NSTextAlignment.center;
+        //displacement_header.text = "Displacement"
+        //displacement_header.font = UIFont (name: "Helvetica Neue", size: 30)
+        //displacement_header.textAlignment = NSTextAlignment.center;
         
         initial_velocity_field.keyboardType = .decimalPad
         time_field.keyboardType = .decimalPad
