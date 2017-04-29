@@ -17,24 +17,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        physics_calculators_header.font = UIFont (name: "Helvetica Neue", size: 30)
+    
         ohms_law_button.layer.cornerRadius = 5
         kinematics_calculator.layer.cornerRadius = 5
-        
-        physics_calculators_header.textAlignment = NSTextAlignment.Center;
-
-        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 }
-
-
-
-
-

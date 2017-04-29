@@ -21,7 +21,6 @@ class Displacement: UIViewController {
     @IBOutlet weak var initial_velocity_field: UITextField!
     @IBOutlet weak var time_field: UITextField!
     @IBOutlet weak var acceleration_field: UITextField!
-    
     @IBOutlet weak var displacement_field: UITextField!
     
     @IBOutlet weak var clear_button: UIButton!
@@ -30,17 +29,13 @@ class Displacement: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        displacement_header.text = "Displacement"
-        displacement_header.font = UIFont (name: "Helvetica Neue", size: 30)
-        displacement_header.textAlignment = NSTextAlignment.Center;
-        
-        initial_velocity_field.keyboardType = .DecimalPad
-        time_field.keyboardType = .DecimalPad
-        acceleration_field.keyboardType = .DecimalPad
+
+        initial_velocity_field.keyboardType = .decimalPad
+        time_field.keyboardType = .decimalPad
+        acceleration_field.keyboardType = .decimalPad
         
         clear_button.layer.cornerRadius = 5
         calculate_button.layer.cornerRadius = 5
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,22 +43,19 @@ class Displacement: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func compute_displacement(sender: AnyObject) {
+    @IBAction func compute_displacement(_ sender: AnyObject) {
         // d = v0*t + 1/2 at^2
         let initial_velocity = Double(initial_velocity_field.text!)
         let time = Double(time_field.text!)
         let acceleration = Double(acceleration_field.text!)
-        _ = UIAlertController(title: "Alert", message: "Please input at least two values", preferredStyle: UIAlertControllerStyle.Alert)
+        _ = UIAlertController(title: "Alert", message: "Please input at least two values", preferredStyle: UIAlertControllerStyle.alert)
         
         var displacement = 0.0
-        
         displacement = (initial_velocity! * time!) + (0.5 * (acceleration! * (time! * time!)))
-        
         displacement_field.text = String(displacement)
     }
     
-    @IBAction func clear_results(sender: AnyObject) {
-        
+    @IBAction func clear_results(_ sender: AnyObject) {
         initial_velocity_field.text = ""
         time_field.text = ""
         acceleration_field.text = ""
