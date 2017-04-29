@@ -21,7 +21,6 @@ class Displacement: UIViewController {
     @IBOutlet weak var initial_velocity_field: UITextField!
     @IBOutlet weak var time_field: UITextField!
     @IBOutlet weak var acceleration_field: UITextField!
-    
     @IBOutlet weak var displacement_field: UITextField!
     
     @IBOutlet weak var clear_button: UIButton!
@@ -30,17 +29,13 @@ class Displacement: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //displacement_header.text = "Displacement"
-        //displacement_header.font = UIFont (name: "Helvetica Neue", size: 30)
-        //displacement_header.textAlignment = NSTextAlignment.center;
-        
+
         initial_velocity_field.keyboardType = .decimalPad
         time_field.keyboardType = .decimalPad
         acceleration_field.keyboardType = .decimalPad
         
         clear_button.layer.cornerRadius = 5
         calculate_button.layer.cornerRadius = 5
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -56,14 +51,11 @@ class Displacement: UIViewController {
         _ = UIAlertController(title: "Alert", message: "Please input at least two values", preferredStyle: UIAlertControllerStyle.alert)
         
         var displacement = 0.0
-        
         displacement = (initial_velocity! * time!) + (0.5 * (acceleration! * (time! * time!)))
-        
         displacement_field.text = String(displacement)
     }
     
     @IBAction func clear_results(_ sender: AnyObject) {
-        
         initial_velocity_field.text = ""
         time_field.text = ""
         acceleration_field.text = ""

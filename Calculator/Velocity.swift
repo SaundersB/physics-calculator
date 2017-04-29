@@ -26,7 +26,6 @@ class Velocity: UIViewController {
     @IBOutlet weak var clear_button: UIButton!
     @IBOutlet weak var calculate_button: UIButton!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        // velocity_header.textAlignment = NSTextAlignment.center;
@@ -59,12 +58,10 @@ class Velocity: UIViewController {
         }
         
         initial_velocity = (displacement! / time!) - (0.5 * acceleration! * time!)
-        
         initial_velocity_field.text = String(initial_velocity)
     }
     
     @IBAction func clear_results(_ sender: AnyObject) {
-        
         initial_velocity_field.text = ""
         time_field.text = ""
         acceleration_field.text = ""
